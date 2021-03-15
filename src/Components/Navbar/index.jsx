@@ -4,14 +4,14 @@ import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from './NavbarElement
 import MenuIcon from '@material-ui/icons/Menu';
 import IconButton from "@material-ui/core/IconButton";
 
-function Navbar() {
+function Navbar({toggle}) {
     return (
         <Nav>
             <NavLink to="/">
                 <h1>Logo</h1>
             </NavLink>
             <Bars />
-            <IconButton>
+            <IconButton onClick={toggle}>
                 <MenuIcon 
                     id="icon"
                     style={{fontSize:'50'}}

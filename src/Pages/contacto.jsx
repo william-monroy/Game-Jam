@@ -1,7 +1,12 @@
 import React from 'react'
+import Sidebar from '../Components/Sidebar'
+import Navbar from '../Components/Navbar'
 
 function Contacto() {
     return (
+        <>
+        <Sidebar/>
+        <Navbar/>
         <div
             style={{
                 display: 'flex',
@@ -12,6 +17,7 @@ function Contacto() {
         >
             <h1>Contacto</h1>
         </div>
+        </>
     )
 }
 

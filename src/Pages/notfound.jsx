@@ -1,7 +1,12 @@
 import React from 'react'
+import Sidebar from '../Components/Sidebar'
+import Navbar from '../Components/Navbar'
 
 function NotFound() {
     return (
+        <>
+        <Sidebar/>
+        <Navbar/>
         <div
             style={{
                 display: 'flex',
@@ -17,6 +22,7 @@ function NotFound() {
             <br/>
             <h3>Lo sentimos, no encontramos esta página</h3>
         </div>
+        </>
     )
 }
 

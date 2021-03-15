@@ -1,7 +1,12 @@
 import React from 'react'
+import Sidebar from '../Components/Sidebar'
+import Navbar from '../Components/Navbar'
 
 function Patrocinios() {
     return (
+        <>
+        <Sidebar/>
+        <Navbar/>
         <div
             style={{
                 display: 'flex',
@@ -12,6 +17,7 @@ function Patrocinios() {
         >
             <h1>Patrocinios</h1>
         </div>
+        </>
     )
 }
 
