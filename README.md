@@ -8,7 +8,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/william-monroy"><img src="https://avatars.githubusercontent.com/u/58092741?s=460&u=9046787a44c4aa8e703772d366ab9eadfc61d665&v=4" width="80px;" alt="William Monroy"/><br /><sub><b>William Monroy</b></sub></a><br />💻</td>
+    <td align="center"><a href="https://github.com/william-monroy"><img src="https://avatars.githubusercontent.com/u/58092741?s=460&u=9046787a44c4aa8e703772d366ab9eadfc61d665&v=4" width="80px;" alt="William Monroy"/><br /><sub><b>William Monroy</b></sub></a><br />💻🎨</td>
     
   </tr>
 </table>
