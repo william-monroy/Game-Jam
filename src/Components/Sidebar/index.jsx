@@ -15,16 +15,16 @@ function Sidebar({isOpen, toggle}) {
             </IconButton>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to="info">
+                    <SidebarLink to="/info" onClick={toggle}>
                         Información
                     </SidebarLink>
-                    <SidebarLink to="categorias">
+                    <SidebarLink to="/categorias" onClick={toggle}>
                         Categorías
                     </SidebarLink>
-                    <SidebarLink to="patrocinios">
+                    <SidebarLink to="/patrocinios" onClick={toggle}>
                         Patrocinios
                     </SidebarLink>
-                    <SidebarLink to="contacto">
+                    <SidebarLink to="/contacto" onClick={toggle}>
                         Contacto
                     </SidebarLink>
                 </SidebarMenu>

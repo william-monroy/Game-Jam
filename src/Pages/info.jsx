@@ -1,13 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Sidebar from '../Components/Sidebar'
 import Navbar from '../Components/Navbar'
 import TextField from '@material-ui/core/TextField'
 
 function Informacion() {
+
+    const [isOpen, setIsOpen] = useState(false)
+
+    const toggle = () => {
+        setIsOpen(!isOpen)
+    }
+
     return (
         <>
-            <Sidebar />
-            <Navbar />
+            <Sidebar isOpen={isOpen} toggle={toggle} />
+            <Navbar toggle={toggle} />
             <div
                 style={{
                     display: 'flex',
@@ -24,8 +31,6 @@ function Informacion() {
 
                 <form noValidate autoComplete="off">
                     <TextField id="standard-basic" label="Standard" />
-                    <TextField id="filled-basic" label="Filled" variant="filled" />
-                    <TextField id="outlined-basic" label="Outlined" variant="outlined" />
                 </form>
 
             </div>
