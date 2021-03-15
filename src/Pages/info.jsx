@@ -19,6 +19,7 @@ function Informacion() {
             <h1>Información</h1>
             <p>Lorem ipsum  sit amet consectetur, adipisicing elit. Nihil excepturi commodi id asperiores saepe recusandae dolorem laboriosam, possimus, quis quas odit. Non deserunt quibusdam ullam soluta quasi, voluptas explicabo aliquid!</p>
             <p className="parrafo">Lorem ipsum dolor sit amet.</p>
+            <p className="parrafo">hola</p>
 
         </div>
         </>
