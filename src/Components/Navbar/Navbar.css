@@ -1,0 +1,17 @@
+#icon {
+    display: none;
+    color: #fff;
+    font-size: 50;
+}
+
+@media(max-width: 768px) {
+    #icon {
+        display: block;
+        position: absolute;
+        top: -20px;
+        right: 0;
+        transform: translate(-100%, 75%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+}
