@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Sidebar from '../Components/Sidebar'
 import Navbar from '../Components/Navbar'
+import Footer from '../Components/Footer'
 
 function Patrocinios() {
 
@@ -24,6 +25,7 @@ function Patrocinios() {
             >
                 <h1>Patrocinios</h1>
             </div>
+            <Footer/>
         </>
     )
 }

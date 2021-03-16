@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Sidebar from '../Components/Sidebar'
 import Navbar from '../Components/Navbar'
+import Footer from '../Components/Footer'
 
 function Contacto() {
 
@@ -24,6 +25,7 @@ function Contacto() {
             >
                 <h1>Contacto</h1>
             </div>
+            <Footer/>
         </>
     )
 }

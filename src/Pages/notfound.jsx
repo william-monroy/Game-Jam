@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Sidebar from '../Components/Sidebar'
 import Navbar from '../Components/Navbar'
+import Footer from '../Components/Footer'
 
 function NotFound() {
 
@@ -29,6 +30,7 @@ function NotFound() {
                 <br />
                 <h3>Lo sentimos, no encontramos esta página</h3>
             </div>
+            <Footer/>
         </>
     )
 }

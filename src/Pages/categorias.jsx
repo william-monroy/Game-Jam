@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Sidebar from '../Components/Sidebar'
 import Navbar from '../Components/Navbar'
+import Footer from '../Components/Footer'
 
 function Categorias() {
 
@@ -24,6 +25,7 @@ function Categorias() {
             >
                 <h1>Categorias</h1>
             </div>
+            <Footer/>
         </>
 
     )
