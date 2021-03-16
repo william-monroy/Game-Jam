@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Sidebar from '../Components/Sidebar'
 import Navbar from '../Components/Navbar'
 import TextField from '@material-ui/core/TextField'
+import Footer from '../Components/Footer'
 
 function Informacion() {
 
@@ -34,6 +35,7 @@ function Informacion() {
                 </form>
 
             </div>
+            <Footer/>
         </>
     )
 }
