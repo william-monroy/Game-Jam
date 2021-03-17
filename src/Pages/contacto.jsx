@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import Sidebar from '../Components/Sidebar'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
+import Form from '../Components/Form'
+{/*import BackImg from '../Images/contact1.jpeg'*/}
 
 function Contacto() {
 
@@ -12,21 +14,14 @@ function Contacto() {
     }
 
     return (
-        <>
+        <div 
+            style={{background:'#0c1e49'}}
+        >
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
-            <div
-                style={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    height: '90vh'
-                }}
-            >
-                <h1>Contacto</h1>
-            </div>
+            <Form/>
             <Footer/>
-        </>
+        </div>
     )
 }
 

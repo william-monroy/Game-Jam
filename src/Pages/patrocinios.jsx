@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Sidebar from '../Components/Sidebar'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
+import Carousel from '../Components/Carousel'
 
 function Patrocinios() {
 
@@ -15,15 +16,8 @@ function Patrocinios() {
         <>
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
-            <div
-                style={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    height: '90vh'
-                }}
-            >
-                <h1>Patrocinios</h1>
+            <div className="col-xs-12">
+                <Carousel/>
             </div>
             <Footer/>
         </>
