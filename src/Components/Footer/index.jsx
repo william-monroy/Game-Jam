@@ -43,7 +43,7 @@ function Footer() {
                     </FooterLinksWrapper>
                 </FooterLinksContainer>
             </FooterWrap>
-                <SocialMedia>
+                <SocialMedia className="pb-5">
                     <SocialMediaWrap>
                         <SocialLogo to='/'>
                             SAITC
@@ -53,7 +53,6 @@ function Footer() {
                             <SocialIconLink href='//www.facebook.com/' target='_blank' aria-label="Facebook">
                                 <FaFacebook/>
                             </SocialIconLink>
-
                             <SocialIconLink href='/' target='_blank' aria-label="Instagram">
                                 <FaInstagram/>
                             </SocialIconLink>

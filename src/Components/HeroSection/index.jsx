@@ -23,7 +23,7 @@ function HeroSection() {
                 </HeroP>
                 <HeroBtnWrapper>
                     <Button 
-                    to="info"
+                    to="/info"
                     onMouseEnter={onHover} onMouseLeave={onHover}
                     primary='true'
                     dark='true'

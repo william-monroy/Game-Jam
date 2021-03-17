@@ -14,14 +14,28 @@ function Informacion() {
         setIsOpen(!isOpen)
     }
 
+    
+    let slides = [
+        {
+            nombre: 'Un evento para todos',
+            imagen: 'https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+            descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nostrum quibusdam optio esse voluptas illo sequi repudiandae quam laboriosam totam!'
+        },
+        {
+            nombre: 'Hacking Time',
+            imagen: 'https://images.pexels.com/photos/4974915/pexels-photo-4974915.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+            descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nostrum quibusdam optio esse voluptas illo sequi repudiandae quam laboriosam totam!'
+        }
+    ]
+
     return (
         <div >
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
             <div className="mb-5">
-                <div className="row mb-5">
+                <div className="mb-5">
 
-                    <Carousel />
+                    <Carousel items={slides}/>
                 </div>
 
                 <div className="container marketing">
