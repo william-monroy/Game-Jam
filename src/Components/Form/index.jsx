@@ -1,7 +1,36 @@
-import React from 'react'
-
+import React, {useState} from 'react'
+import {store} from '../../firebaseconfig'
 
 const Form = () => {
+
+    const [nombres,setNombres] = useState('');
+    const [apellidos,setApellidos] = useState('');
+    const [email,setEmail] = useState('');
+    const [asunto,setAsunto] = useState('');
+    const [mensaje,setMensaje] = useState('');
+
+    const Enviar = async (e) => {
+        e.preventDefault()
+        const form_data = {
+            nombres:nombres,
+            apellidos:apellidos,
+            email:email,
+            asunto:asunto,
+            mensaje:mensaje
+        }
+        try {
+            const data = await store.collection('contacto').add(form_data)
+            setNombres('')
+            setApellidos('')
+            setEmail('')
+            setAsunto('')
+            setMensaje('')
+            console.log('Formulario enviado');
+        } catch (e) {
+            console.log(e);
+        }
+    }
+
     return (
         <div
             className="container mb-5"
@@ -21,52 +50,45 @@ const Form = () => {
                         style={{margin:'0 auto'}}
                     >
                         <h4 className="mb-3" style={{color:"#fff"}}>Datos de Contacto</h4>
-                        <form className="needs-validation" novalidate>
+                        <form className="needs-validation" novalidate onSubmit={Enviar}>
                             <div className="row g-3">
                                 <div className="col-sm-6">
-                                    <label for="firstName" className="form-label" style={{color:"#c5c5c5"}}>Nombres</label>
-                                    <input type="text" className="form-control" id="firstName" placeholder="" value="" required />
+                                    <label for="nombres" className="form-label" style={{color:"#c5c5c5"}}>Nombres</label>
+                                    <input type="text" className="form-control" id="firstName" placeholder="" onChange={(e)=>setNombres(e.target.value)} value={nombres} required />
                                     <div className="invalid-feedback">
                                         Nombre no válido
                                     </div>
                                 </div>
 
                                 <div className="col-sm-6">
-                                    <label for="lastName" className="form-label" style={{color:"#c5c5c5"}}>Apellidos</label>
-                                    <input type="text" className="form-control" id="lastName" placeholder="" value="" required />
+                                    <label for="apellidos" className="form-label" style={{color:"#c5c5c5"}}>Apellidos</label>
+                                    <input type="text" className="form-control" id="lastName" placeholder="" onChange={(e)=>setApellidos(e.target.value)} value={apellidos} required />
                                     <div className="invalid-feedback">
                                         Apellidos no válidos
                                      </div>
                                 </div>
 
-                                
-
                                 <div className="col-12">
                                     <label for="email" className="form-label" style={{color:"#c5c5c5"}}>Email</label>
-                                    <input type="email" className="form-control" id="email" placeholder="you@example.com" />
+                                    <input type="email" className="form-control" id="email" onChange={(e)=>setEmail(e.target.value)} value={email} placeholder="you@example.com" />
                                     <div className="invalid-feedback">
-                                        Please enter a valid email address for shipping updates.
+                                        Por favor escriba un email válido
                                     </div>
                                 </div>
 
                                 <div className="col-12">
-                                    <label for="address" className="form-label" style={{color:"#c5c5c5"}}>Asunto</label>
-                                    <input type="text" className="form-control" id="address" placeholder="Soporte, patrocinio, etc." required />
+                                    <label for="asunto" className="form-label" style={{color:"#c5c5c5"}}>Asunto</label>
+                                    <input type="text" className="form-control" id="address" placeholder="Soporte, patrocinio, etc."  onChange={(e)=>setAsunto(e.target.value)} value={asunto}  required />
                                     <div className="invalid-feedback">
                                         Asunto no válido
                                     </div>
                                 </div>
 
                                 <div className="col-12">
-                                    <label for="address2" className="form-label" style={{color:"#c5c5c5"}}>Mensaje <span className="text-muted"></span></label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
-                                </div>
-
-                                
+                                    <label for="mensaje" className="form-label" style={{color:"#c5c5c5"}}>Mensaje <span className="text-muted"></span></label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"  onChange={(e)=>setMensaje(e.target.value)} value={mensaje} required></textarea>
+                                </div>    
                             </div>
-
-
-                            
 
                             <hr className="my-4" />
 
