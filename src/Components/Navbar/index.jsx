@@ -9,7 +9,7 @@ function Navbar({toggle}) {
     return (
         <Nav>
             <NavLink to="/">
-                <img id='logo' src={Logo} alt="SAITC"/>
+                <img id="logo" src={Logo} alt="SAITC"/>
             </NavLink>
             <Bars />
             <IconButton onClick={toggle}>
