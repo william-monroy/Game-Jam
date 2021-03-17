@@ -38,7 +38,7 @@
 
 @media(min-width: 767.1px) and (max-width: 991px) {
     #logo{
-        width: 80px;
+        width: 50px;
     }
 
     #icon {
@@ -54,7 +54,7 @@
 
 @media(min-width: 991.1px) {
     #logo{
-        width: 90px;
+        width: 60px;
     }
 
     #icon {
