@@ -7,12 +7,12 @@ import '../Navbar/Navbar.css'
 
 function Navbar({toggle}) {
     return (
-        <Nav>
+        <Nav id="nav">
             <NavLink to="/">
                 <img id="logo" src={Logo} alt="SAITC"/>
             </NavLink>
             <Bars />
-            <IconButton onClick={toggle}>
+            <IconButton id="contIco" onClick={toggle}>
                 <MenuIcon 
                     id="icon"
                     style={{fontSize:'50'}}
