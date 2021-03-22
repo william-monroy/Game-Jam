@@ -1,28 +1,27 @@
 import React, {useState} from 'react'
-import {store} from '../../firebaseconfig'
 
 const Form = () => {
 
-    const [nombres,setNombres] = useState('');
-    const [apellidos,setApellidos] = useState('');
-    const [email,setEmail] = useState('');
+    const [nombre,setNombre] = useState('');
+    const [pais,setPais] = useState('');
+    const [entidad,setEntidad] = useState('');
     const [asunto,setAsunto] = useState('');
     const [mensaje,setMensaje] = useState('');
-
+    
     const Enviar = async (e) => {
-        e.preventDefault()
+        
         const form_data = {
-            nombres:nombres,
-            apellidos:apellidos,
-            email:email,
+            nombres:nombre,
+            pais:pais,
+            entidad:entidad,
             asunto:asunto,
             mensaje:mensaje
         }
         try {
-            const data = await store.collection('contacto').add(form_data)
-            setNombres('')
-            setApellidos('')
-            setEmail('')
+            
+            setNombre('')
+            setPais('')
+            setEntidad('')
             setAsunto('')
             setMensaje('')
             console.log('Formulario enviado');
@@ -50,35 +49,35 @@ const Form = () => {
                         style={{margin:'0 auto'}}
                     >
                         <h4 className="mb-3" style={{color:"#fff"}}>Datos de Contacto</h4>
-                        <form className="needs-validation" novalidate onSubmit={Enviar}>
+                        <form className="needs-validation" novalidate onSubmit={Enviar} action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdwZr8mF5d4UAdTU20550nCDx0GmqDAvMWizUmIqyBU8zp_Dg/formResponse">
                             <div className="row g-3">
                                 <div className="col-sm-6">
-                                    <label for="nombres" className="form-label" style={{color:"#c5c5c5"}}>Nombres</label>
-                                    <input type="text" className="form-control" id="firstName" placeholder="" onChange={(e)=>setNombres(e.target.value)} value={nombres} required />
+                                    <label for="nombres" className="form-label" style={{color:"#c5c5c5"}}>Nombre</label>
+                                    <input name="entry.1488812182" type="text" className="form-control" id="firstName" placeholder="" onChange={(e)=>setNombre(e.target.value)} value={nombre} required />
                                     <div className="invalid-feedback">
                                         Nombre no válido
                                     </div>
                                 </div>
 
                                 <div className="col-sm-6">
-                                    <label for="apellidos" className="form-label" style={{color:"#c5c5c5"}}>Apellidos</label>
-                                    <input type="text" className="form-control" id="lastName" placeholder="" onChange={(e)=>setApellidos(e.target.value)} value={apellidos} required />
+                                    <label for="pais" className="form-label" style={{color:"#c5c5c5"}}>Pais</label>
+                                    <input name="entry.711209219" type="text" className="form-control" id="lastName" placeholder="" onChange={(e)=>setPais(e.target.value)} value={pais} required />
                                     <div className="invalid-feedback">
-                                        Apellidos no válidos
+                                        País no válido
                                      </div>
                                 </div>
 
                                 <div className="col-12">
-                                    <label for="email" className="form-label" style={{color:"#c5c5c5"}}>Email</label>
-                                    <input type="email" className="form-control" id="email" onChange={(e)=>setEmail(e.target.value)} value={email} placeholder="you@example.com" />
+                                    <label for="entidad" className="form-label" style={{color:"#c5c5c5"}}>Universidad o Empresa</label>
+                                    <input name="entry.1408935934" type="entidad" className="form-control" id="entidad" onChange={(e)=>setEntidad(e.target.value)} value={entidad} />
                                     <div className="invalid-feedback">
-                                        Por favor escriba un email válido
+                                        Por favor escriba un nombre de entidad válido
                                     </div>
                                 </div>
 
                                 <div className="col-12">
                                     <label for="asunto" className="form-label" style={{color:"#c5c5c5"}}>Asunto</label>
-                                    <input type="text" className="form-control" id="address" placeholder="Soporte, patrocinio, etc."  onChange={(e)=>setAsunto(e.target.value)} value={asunto}  required />
+                                    <input name="entry.1070031650" type="text" className="form-control" id="address" placeholder="Soporte, patrocinio, etc."  onChange={(e)=>setAsunto(e.target.value)} value={asunto}  required />
                                     <div className="invalid-feedback">
                                         Asunto no válido
                                     </div>
@@ -86,7 +85,7 @@ const Form = () => {
 
                                 <div className="col-12">
                                     <label for="mensaje" className="form-label" style={{color:"#c5c5c5"}}>Mensaje <span className="text-muted"></span></label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"  onChange={(e)=>setMensaje(e.target.value)} value={mensaje} required></textarea>
+                                    <textarea name="entry.1250646834" class="form-control" id="exampleFormControlTextarea1" rows="3"  onChange={(e)=>setMensaje(e.target.value)} value={mensaje} required></textarea>
                                 </div>    
                             </div>
 
