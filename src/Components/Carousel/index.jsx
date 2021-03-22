@@ -7,7 +7,7 @@ const Carousel = ( props ) => {
     const [items, setItems] = useState(props.items);
 
     return (
-        <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
+        <div className="carousel slide" data-bs-ride="carousel">
             <div className="carousel-indicators">
                 {items.map((item, i) => (
 

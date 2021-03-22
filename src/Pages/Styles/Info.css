@@ -1,0 +1,25 @@
+.card-pri {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.desc {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.lead {
+    text-align: justify;
+    font-weight: 400;
+    color: #555555;
+}
+
+.txt-center {
+    text-align: center;
+    font-weight: 400;
+    color: #555555;
+}
