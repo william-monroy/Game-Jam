@@ -24,7 +24,7 @@
     }
 }
 
-@media(min-width: 575.1px) and (max-width: 767px) {
+@media(min-width: 575.1px) and (max-width: 768px) {
     #logo{
         width: 50px;
     }
@@ -44,7 +44,7 @@
     }
 }
 
-@media(min-width: 767.1px) and (max-width: 991px) {
+@media(min-width: 768.1px) and (max-width: 991px) {
     #logo{
         width: 50px;
     }
