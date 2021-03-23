@@ -33,31 +33,33 @@ function Informacion() {
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
             <div className="mb-5">
-                <div className="mb-5">
 
-                    <Carousel items={slides} />
+                <div className="slider" >
+                <Carousel items={slides} />
+
                 </div>
 
-                <div className="container marketing">
+
+                <div className="container">
 
                     <div className="row">
                         <div className="col-lg-4 card-pri">
                             <img src="https://img.icons8.com/fluent/240/000000/air-raider.png" width="150px" />
                             <h2>Tiempo</h2>
                             <p>Tienes 24 horas para hacer un juego</p>
-                            <p><a className="btn btn-secondary" href="#">Lorem, ipsum dolor.</a></p>
+                            
                         </div>
                         <div className="col-lg-4 card-pri">
                             <img src="https://img.icons8.com/fluent/240/000000/greek-helmet.png" width="150px" />
                             <h2>Equipos</h2>
                             <p>Cada equipo puede estar conformado por 5 integrantes</p>
-                            <p><a className="btn btn-secondary" href="#">Lorem, ipsum dolor.</a></p>
+                            
                         </div>
                         <div className="col-lg-4 card-pri">
                             <img src="https://img.icons8.com/fluent/240/000000/conference-call.png" width="150px" />
                             <h2>Público</h2>
                             <p>Están invitados estudiantes de toda Latinoamérica</p>
-                            <p><a className="btn btn-secondary" href="#">Lorem, ipsum dolor.</a></p>
+                            
                         </div>
                     </div>
 

@@ -19,10 +19,6 @@
         cursor: pointer;
     }
     
-    #contIco {
-        left: 20px;
-    }
-    
     #nav {
         height: 70px;
     }
@@ -43,10 +39,6 @@
         cursor: pointer;
     }
 
-    #contIco {
-        left: 20px;
-    }
-
     #nav {
         height: 70px;
     }
@@ -59,12 +51,6 @@
 
     #icon {
         display: none;
-        position: absolute;
-        top: -30px;
-        right: 0;
-        transform: translate(-100%, 75%);
-        font-size: 1.8rem;
-        cursor: pointer;
     }
 }
 
@@ -75,11 +61,5 @@
 
     #icon {
         display: none;
-        position: absolute;
-        top: -30px;
-        right: 0;
-        transform: translate(-100%, 75%);
-        font-size: 1.8rem;
-        cursor: pointer;
     }
 }

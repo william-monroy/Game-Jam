@@ -7,6 +7,7 @@ import Categorias from './Pages/categorias';
 import Patrocinios from './Pages/patrocinios';
 import Contacto from './Pages/contacto';
 import NotFound from './Pages/notfound';
+import Registro from './Pages/registro';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/categorias" component={Categorias} />
         <Route path="/patrocinios" component={Patrocinios} />
         <Route path="/contacto" component={Contacto} />
+        <Route path="/registro" component={Registro} />
         <Route component={NotFound} />
       </Switch>
     </Router>
