@@ -5,31 +5,29 @@ import IconButton from "@material-ui/core/IconButton";
 import Logo from '../../Images/icono.jpg'
 import '../Navbar/Navbar.css'
 
-function Navbar({toggle}) {
+function Navbar({ toggle }) {
     return (
         <Nav id="nav">
             <NavLink to="/">
-                <img id="logo" src={Logo} alt="SAITC"/>
+                <img id="logo" src={Logo} alt="SAITC" />
             </NavLink>
             <Bars />
             <IconButton id="contIco" onClick={toggle}>
-                <MenuIcon 
+                <MenuIcon
                     id="icon"
-                    style={{fontSize:'50'}}
-                /> 
+                    style={{ fontSize: '50' }}
+                />
             </IconButton>
             <NavMenu>
                 <NavLink to="/info" activeStyle>
-                    Informacion
+                    Información
                 </NavLink>
-                        <NavLink to="/categorias" activeStyle>
-                            Categorias
+                <NavLink to="/categorias" activeStyle>
+                    Categorías
                 </NavLink>
-                        <NavLink to="/patrocinios" activeStyle>
-                            Patrocinios
-                </NavLink>
-                        <NavLink to="/contacto" activeStyle>
-                            Contacto
+                
+                <NavLink to="/contacto" activeStyle>
+                    Contacto
                 </NavLink>
             </NavMenu>
         </Nav >

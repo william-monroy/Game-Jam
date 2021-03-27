@@ -21,9 +21,6 @@ function Sidebar({isOpen, toggle}) {
                     <SidebarLink to="/categorias" onClick={toggle}>
                         Categorías
                     </SidebarLink>
-                    <SidebarLink to="/patrocinios" onClick={toggle}>
-                        Patrocinios
-                    </SidebarLink>
                     <SidebarLink to="/contacto" onClick={toggle}>
                         Contacto
                     </SidebarLink>

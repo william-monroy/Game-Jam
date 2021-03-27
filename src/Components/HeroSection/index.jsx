@@ -15,8 +15,7 @@ function HeroSection() {
     return (
         <HeroContainer>
             <HeroBg>
-                
-                <img src={Poster} alt='Game Jam SAITC' className='img-responsive' style={{width:'100%'}}/>
+                <img src={Poster} alt='Game Jam SAITC' className='img-fluid' style={{width:'100%'}}/>
             </HeroBg>
             <HeroContent>                
                 <HeroBtnWrapper>
