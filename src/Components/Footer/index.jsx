@@ -5,44 +5,7 @@ import {FaFacebook,FaInstagram,FaYoutube,FaTwitter} from 'react-icons/fa'
 function Footer() {
     return (
         <FooterContainer>
-            <FooterWrap>
-                <FooterLinksContainer>
-                    <FooterLinksWrapper>
-                        <FooterLinkItems>
-                            <FooterLinkTitle>Navegación</FooterLinkTitle>
-                            <FooterLink to="/">Inicio</FooterLink>
-                            <FooterLink to="/info">Información</FooterLink>
-                            <FooterLink to="/categorias">Categorías</FooterLink>
-                            <FooterLink to="/patrocinios">Patrocinios</FooterLink>
-                            <FooterLink to="/contacto">Contacto</FooterLink>
-                        </FooterLinkItems>
-                        <FooterLinkItems>
-                            <FooterLinkTitle>Acerca de</FooterLinkTitle>
-                            <FooterLink to="/">Soporte</FooterLink>
-                            <FooterLink to="/">Conócenos</FooterLink>
-                            <FooterLink to="/">Colaboradores</FooterLink>
-                            <FooterLink to="/">Código de Conducta</FooterLink>
-                        </FooterLinkItems>
-                    </FooterLinksWrapper>
-                    <FooterLinksWrapper>
-                        <FooterLinkItems>
-                            <FooterLinkTitle>Agenda</FooterLinkTitle>
-                            <FooterLink to="/">Apertura</FooterLink>
-                            <FooterLink to="/">Charlas Informativas</FooterLink>
-                            <FooterLink to="/">Networking</FooterLink>
-                            <FooterLink to="/">Talleres</FooterLink>
-                            <FooterLink to="/">Clausura</FooterLink>
-                        </FooterLinkItems>
-                        <FooterLinkItems>
-                            <FooterLinkTitle>Redes Sociales</FooterLinkTitle>
-                            <FooterLink to="/">Instagram</FooterLink>
-                            <FooterLink to="/">Facebook</FooterLink>
-                            <FooterLink to="/">Youtube</FooterLink>
-                            <FooterLink to="/">Twitter</FooterLink>
-                        </FooterLinkItems>
-                    </FooterLinksWrapper>
-                </FooterLinksContainer>
-            </FooterWrap>
+            
                 <SocialMedia className="pb-5">
                     <SocialMediaWrap>
                         <SocialLogo to='/'>

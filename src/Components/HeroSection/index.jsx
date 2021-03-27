@@ -17,10 +17,8 @@ function HeroSection() {
                 <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
             </HeroBg>
             <HeroContent>
-                <HeroH1>GAME JAM SAITC 2021</HeroH1>
-                <HeroP>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem commodi voluptates suscipit ex similique ratione.
-                </HeroP>
+                <HeroH1>Game Jam SAITC 2021</HeroH1>
+                
                 <HeroBtnWrapper>
                     <Button 
                     to="/info"

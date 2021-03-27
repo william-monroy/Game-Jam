@@ -45,7 +45,6 @@ function Categorias() {
                                 >
                                     Categoría Cerrada
                                 </h3>
-                                <div className="mb-1 text-muted">Experimented</div>
                                 <br />
                                 <p
                                     className="card-text mb-auto txt-init"
@@ -70,7 +69,6 @@ function Categorias() {
                                 >
                                     Categoría Abierta
                                 </h3>
-                                <div className="mb-1 text-muted">Newbie</div>
                                 <br />
                                 <p
                                     className="card-text mb-auto txt-init"
@@ -78,25 +76,23 @@ function Categorias() {
                                     Podrán usar material creado previamente por ustedes u otros autores durante el Game Jam, siempre y cuando tenga licencia de Creative Commons.
                                 </p>
                             </div>
-                            <div className="col-auto d-none d-lg-block">
-                                <svg className="bd-placeholder-img" width="200" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div className="p-4 p-md-5 mb-4 text-white rounded card-init">
                     <div className="col-md-12 px-0">
-                        <h1 className="display-4 fst-italic">Regístrate</h1>
-                        <p className="lead my-3 txt-init">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum adipisci unde quasi repellat! Temporibus, magnam tempora ex aliquid sequi iusto dignissimos!</p>
-                        <div class="d-grid gap-2 col-6 mx-auto mt-5 mb-5">
+                        <h1 className="display-4 fst-italic" style={{textAlign:'center'}}>Regístrate</h1>
+                       
+                       
+                        <div class="d-grid gap-2 col-6 mx-auto mt-5 mb-5" >
 
-                            <button class="btn btn-dark" type="button">
+                            <button class="btn" type="button" style={{padding:'1em', fontSize:'1.5em', background: '#0e2433', borderRadius:'5px'}}>
                                 <Link to="/registro" style={{textDecoration:'none', color:'white'}}>Formulario de Registro</Link>
                             </button>
 
                         </div>
+
                     </div>
                 </div>
             </div>
