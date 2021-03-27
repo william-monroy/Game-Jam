@@ -1,0 +1,23 @@
+@media(min-width: 200px) and (max-width: 575px) {
+    .contenido{
+        height: 91.8vh;
+    }
+}
+
+@media(min-width: 575.1px) and (max-width: 767px) {
+    .contenido{
+        height: 91.8vh;
+    }
+}
+
+@media(min-width: 767.1px) and (max-width: 991px) {
+    .contenido{
+        height: 92.8vh;
+    }
+}
+
+@media(min-width: 991.1px) {
+    .contenido{
+        height: 92.8vh;
+    }
+}

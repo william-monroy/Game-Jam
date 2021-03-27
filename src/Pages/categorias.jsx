@@ -16,7 +16,13 @@ function Categorias() {
 
     return (
         <div
-            style={{ backgroundImage: `url(${BackImg})`, backgroundSize: '100%', backgroundRepeat: 'no-repeat' }}
+            style={{
+                backgroundImage: `url(${BackImg})`,
+                backgroundPosition: 'center center',
+                backgroundRepeat: 'no-repeat',
+                backgroundAttachment: 'fixed',
+                backgroundSize: 'cover'
+            }}
 
         >
             <Sidebar isOpen={isOpen} toggle={toggle} />

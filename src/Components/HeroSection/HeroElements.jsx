@@ -8,9 +8,16 @@ export const HeroContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 91.8vh;
     position: relative;
     z-index: 1;
+
+    @media screeen and (max-width: 768px) {
+        height: 92.8vh;
+    }
+
+    @media screeen and (max-width: 480px) {
+        height: 92.8vh;
+    }
 
     :before {
         content: '';
@@ -22,6 +29,7 @@ export const HeroContainer = styled.div`
         background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%), linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
         z-index: 2;
     }
+
 `
 
 export const HeroBg = styled.div`

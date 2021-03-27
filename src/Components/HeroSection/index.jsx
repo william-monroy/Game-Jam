@@ -1,8 +1,9 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import Video from '../../Videos/video.mp4'
-import {Button} from '../ButtonElement'
+import { Button } from '../ButtonElement'
 import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HeroElements'
 import Poster from '../../Images/Poster.jpg'
+import './HeroSection.css'
 
 function HeroSection() {
 
@@ -13,17 +14,24 @@ function HeroSection() {
     }
 
     return (
-        <HeroContainer>
-            <HeroBg>
-                <img src={Poster} alt='Game Jam SAITC' className='img-fluid' style={{width:'100%'}}/>
+        <HeroContainer className='contenido'>
+            <HeroBg
+                style={{ backgroundImage: `url(${Poster})`,
+                         backgroundPosition: 'center center',
+                         backgroundAttachment: 'fixed',
+                         backgroundSize: 'cover'
+                     }}
+
+            >
+                
             </HeroBg>
-            <HeroContent>                
+            <HeroContent>
                 <HeroBtnWrapper>
-                    <Button 
-                    to="/info"
-                    onMouseEnter={onHover} onMouseLeave={onHover}
-                    primary='true'
-                    dark='true'
+                    <Button
+                        to="/info"
+                        onMouseEnter={onHover} onMouseLeave={onHover}
+                        primary='true'
+                        dark='true'
                     >
                         Get started {hover ? <ArrowForward /> : <ArrowRight />}
                     </Button>
