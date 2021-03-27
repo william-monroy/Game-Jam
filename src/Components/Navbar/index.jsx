@@ -2,7 +2,7 @@ import React from 'react'
 import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from './NavbarElements'
 import MenuIcon from '@material-ui/icons/Menu';
 import IconButton from "@material-ui/core/IconButton";
-import Logo from '../../Images/SAITC_logo.png'
+import Logo from '../../Images/icono.jpg'
 import '../Navbar/Navbar.css'
 
 function Navbar({toggle}) {

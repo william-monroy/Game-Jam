@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import Video from '../../Videos/video.mp4'
 import {Button} from '../ButtonElement'
 import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HeroElements'
+import Poster from '../../Images/Poster.jpg'
 
 function HeroSection() {
 
@@ -14,11 +15,10 @@ function HeroSection() {
     return (
         <HeroContainer>
             <HeroBg>
-                <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
-            </HeroBg>
-            <HeroContent>
-                <HeroH1>Game Jam SAITC 2021</HeroH1>
                 
+                <img src={Poster} alt='Game Jam SAITC' className='img-responsive' style={{width:'100%'}}/>
+            </HeroBg>
+            <HeroContent>                
                 <HeroBtnWrapper>
                     <Button 
                     to="/info"
