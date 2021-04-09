@@ -8,6 +8,7 @@ import Patrocinios from './Pages/patrocinios';
 import Contacto from './Pages/contacto';
 import NotFound from './Pages/notfound';
 import Registro from './Pages/registro';
+import Agenda from './Pages/agenda';
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/info" component={Informacion} />
         <Route path="/categorias" component={Categorias} />
-        <Route path="/patrocinios" component={Patrocinios} />
+        <Route path="/agenda" component={Agenda} />
         <Route path="/contacto" component={Contacto} />
         <Route path="/registro" component={Registro} />
         <Route component={NotFound} />

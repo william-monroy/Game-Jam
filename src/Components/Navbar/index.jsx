@@ -25,6 +25,9 @@ function Navbar({ toggle }) {
                 <NavLink to="/categorias" activeStyle>
                     Categorías
                 </NavLink>
+                <NavLink to="/agenda" activeStyle>
+                    Agenda
+                </NavLink>
                 
                 <NavLink to="/contacto" activeStyle>
                     Contacto
