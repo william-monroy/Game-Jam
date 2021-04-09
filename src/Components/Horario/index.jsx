@@ -37,17 +37,17 @@ const Horario = () => {
                   <li className="event" data-time="2:00 - 4:00pm">
                     <h3>Gamification</h3>
                     <p style={{textAlign:'justify'}}>Impartido por Dra. Lorena Matínez</p>
-                    <img className="img-desc" src={Tec} alt="Lienzo" srcset=""/>
+                    
                   </li>
                   <li className="event" data-time="2:00 - 4:00pm">
                     <h3>Gamification</h3>
                     <p style={{textAlign:'justify'}}>Impartido por Hesiquio - Game Designer & Artist</p>
-                    <img className="img-desc" src={TenderClaws} alt="Lienzo" srcset=""/>
+                    <img className="img-desc" src={TenderClaws} alt="TenderClaws" srcset=""/>
                   </li>
                   <li className="event" data-time="4:00 - 7:00pm">
                     <h3>Narrativa Hipertextual</h3>
                     <p style={{textAlign:'justify'}}>Impartido por Dra. Xitlally Romero y Dra. Susana Ruíz</p>
-                    <img className="img-desc" src={Tec} alt="Lienzo" srcset=""/>
+                    
                   </li>
                   <li className="event" data-time="7:00 - 8:00pm">
                     <h3>Making Games isn't all About Making Games </h3>
