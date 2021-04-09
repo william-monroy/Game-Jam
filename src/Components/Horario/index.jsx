@@ -31,27 +31,27 @@ const Horario = () => {
                   <li className="event" data-time="1:00 - 2:00pm">
                     
                     <h3>Cómo manejar a un equipo creativo</h3>
-                    <p>Impartido por Rubén, Project Mananger de Lienzo</p>
+                    <p style={{textAlign:'justify'}}>Impartido por Rubén Dominguez - Project Mananger de Lienzo</p>
                     <img className="img-desc" src={Lienzo} alt="Lienzo" srcset=""/>
                   </li>
                   <li className="event" data-time="2:00 - 4:00pm">
                     <h3>Gamification</h3>
-                    <p>Impartido por Dra. Lorena Matínez</p>
+                    <p style={{textAlign:'justify'}}>Impartido por Dra. Lorena Matínez</p>
                     <img className="img-desc" src={Tec} alt="Lienzo" srcset=""/>
                   </li>
                   <li className="event" data-time="2:00 - 4:00pm">
                     <h3>Gamification</h3>
-                    <p>Impartido por Hesiquio Mendez</p>
+                    <p style={{textAlign:'justify'}}>Impartido por Hesiquio - Game Designer & Artist</p>
                     <img className="img-desc" src={TenderClaws} alt="Lienzo" srcset=""/>
                   </li>
                   <li className="event" data-time="4:00 - 7:00pm">
                     <h3>Narrativa Hipertextual</h3>
-                    <p>Impartido por Dra. Xitlally Romero y Dra. Susana Ruíz</p>
+                    <p style={{textAlign:'justify'}}>Impartido por Dra. Xitlally Romero y Dra. Susana Ruíz</p>
                     <img className="img-desc" src={Tec} alt="Lienzo" srcset=""/>
                   </li>
                   <li className="event" data-time="7:00 - 8:00pm">
                     <h3>Making Games isn't all About Making Games </h3>
-                    <p>Impartido por Luis Bazan</p>
+                    <p style={{textAlign:'justify'}}>Impartido por Luis Bazan - Developer Support Engineer</p>
                     <div className="img-dec">
 
                     <img className="img-desc" src={Unity} alt="Unity" srcset=""/>
@@ -73,7 +73,7 @@ const Horario = () => {
                   </li>
                   <li className="event" data-time="1:00 - 2:00pm">
                     
-                    <h3>Instroducción de Jueces y detalles de la Calificación</h3>
+                    <h3>Introducción de Jueces y detalles de la Calificación</h3>
                     <p style={{textAlign:'justify'}}>Presentaremos a las personas que formarán parte del jurado junto a la rúbrica con la cual estarán caliicando sus juegos. Anunciaremos a los equipos ganadores el viernes 16 de abril.</p>
                   </li>
                 </ul>
