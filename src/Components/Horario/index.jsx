@@ -12,7 +12,6 @@ const Horario = () => {
         <div className="col-md-12">
           <div className="card">
             <div className="card-body">
-              <h2 className="card-title">Agenda de Eventos</h2>
               <div id="content">
                 <ul className="dia">
                   <h2 className="title-dia">Sábado</h2>
@@ -26,7 +25,7 @@ const Horario = () => {
                   <li className="event" data-time="11:00 - 12:00pm">
                     
                     <h3>Inauguración</h3>
-                    <p style={{textAlign:'justify'}}>Se dará inicio a la Hackathon. Asimismo, daremos la bienvenida a todos los participantes y patrocinadores que nos apoyaron a organizar el evento. También podrás conocer información importante y revelaremos la temática del evento.</p>
+                    <p style={{textAlign:'justify'}}>Se dará inicio al Game Jam. Asimismo, daremos la bienvenida a todos los participantes y patrocinadores que nos apoyaron a organizar el evento. También podrás conocer información importante y revelaremos la temática del evento.</p>
                   </li>
                   <li className="event" data-time="1:00 - 2:00pm">
                     
