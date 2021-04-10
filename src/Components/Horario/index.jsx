@@ -62,7 +62,7 @@ const Horario = () => {
                   </li>
                 </ul>
                 <ul className="dia">
-                  <h2 className="title-dia">DOMINGO GMT-5</h2>
+                  <h2 className="title-dia">Domingo GMT-5</h2>
                 </ul>
                 <ul className="abajo timeline">
                   <li className="event" data-time="12:00 - 1:00pm">
