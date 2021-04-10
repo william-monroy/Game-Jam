@@ -14,7 +14,7 @@ const Horario = () => {
             <div className="card-body">
               <div id="content">
                 <ul className="dia">
-                  <h2 className="title-dia">Sábado</h2>
+                  <h2 className="title-dia">Sábado GMT-5</h2>
                 </ul>
                 <ul className="timeline">
                   <li className="event" data-time="8:00 - 11:00am" >
@@ -62,7 +62,7 @@ const Horario = () => {
                   </li>
                 </ul>
                 <ul className="dia">
-                  <h2 className="title-dia">Domingo</h2>
+                  <h2 className="title-dia">DOMINGO GMT-5</h2>
                 </ul>
                 <ul className="abajo timeline">
                   <li className="event" data-time="12:00 - 1:00pm">
@@ -73,7 +73,7 @@ const Horario = () => {
                   <li className="event" data-time="1:00 - 2:00pm">
                     
                     <h3>Introducción de Jueces y detalles de la Calificación</h3>
-                    <p style={{textAlign:'justify'}}>Presentaremos a las personas que formarán parte del jurado junto a la rúbrica con la cual estarán caliicando sus juegos. Anunciaremos a los equipos ganadores el viernes 16 de abril.</p>
+                    <p style={{textAlign:'justify'}}>Presentaremos a las personas que formarán parte del jurado junto a la rúbrica con la cual estarán caliicando sus juegos. Anunciaremos a los equipos ganadores el viernes 23 de abril.</p>
                   </li>
                 </ul>
               </div>
