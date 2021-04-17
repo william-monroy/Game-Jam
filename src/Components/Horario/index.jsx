@@ -23,7 +23,6 @@ const Horario = () => {
                     <p>Los participantes deberán registrar a sus equipos según las idicaciones establecidas en el apartado de Información.</p>
                   </li>
                   <li className="event" data-time="11:00 - 12:00pm">
-                    
                     <h3>Inauguración</h3>
                     <p style={{textAlign:'justify'}}>Se dará inicio al Game Jam. Asimismo, daremos la bienvenida a todos los participantes y patrocinadores que nos apoyaron a organizar el evento. También podrás conocer información importante y revelaremos la temática del evento.</p>
                   </li>
