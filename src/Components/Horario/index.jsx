@@ -38,17 +38,17 @@ const Horario = () => {
                     <p style={{textAlign:'justify'}}>Impartido por Dra. Lorena Matínez</p>
                     
                   </li>
-                  <li className="event" data-time="2:00 - 4:00pm">
+                  <li className="event" data-time="4:00 - 5:00pm">
                     <h3>Gamification</h3>
                     <p style={{textAlign:'justify'}}>Impartido por Hesiquio - Game Designer & Artist</p>
                     <img className="img-desc" src={TenderClaws} alt="TenderClaws" srcset=""/>
                   </li>
-                  <li className="event" data-time="4:00 - 7:00pm">
+                  <li className="event" data-time="5:00 - 7:00pm">
                     <h3>Narrativa Hipertextual</h3>
                     <p style={{textAlign:'justify'}}>Impartido por Dra. Xitlally Romero y Dra. Susana Ruíz</p>
                     
                   </li>
-                  <li className="event" data-time="7:00 - 8:00pm">
+                  <li className="event" data-time="7:00 - 9:00pm">
                     <h3>Making Games isn't all About Making Games </h3>
                     <p style={{textAlign:'justify'}}>Impartido por Luis Bazan - Developer Support Engineer</p>
                     <div className="img-dec">
@@ -65,6 +65,11 @@ const Horario = () => {
                   <h2 className="title-dia">Domingo GMT-5</h2>
                 </ul>
                 <ul className="abajo timeline">
+                  <li className="event" data-time="8:00 - 10:00am">
+                    
+                    <h3>Algoritmos Genéticos para la generación de terrenos</h3>
+                    <p style={{textAlign:'justify'}}>Impartido por Doctor José Carlos Ortiz Bayliss</p>
+                  </li>
                   <li className="event" data-time="12:00 - 1:00pm">
                     
                     <h3>Preparación de videojuegos</h3>
