@@ -68,7 +68,7 @@ const Horario = () => {
                   <li className="event" data-time="8:00 - 10:00am">
                     
                     <h3>Algoritmos Genéticos para la generación de terrenos</h3>
-                    <p style={{textAlign:'justify'}}>Impartido por Doctor José Carlos Ortiz Bayliss</p>
+                    <p style={{textAlign:'justify'}}>Doctor José Carlos Ortiz Bayliss</p>
                   </li>
                   <li className="event" data-time="12:00 - 1:00pm">
                     
